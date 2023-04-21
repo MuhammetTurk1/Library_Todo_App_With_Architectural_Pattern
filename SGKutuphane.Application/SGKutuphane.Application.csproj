@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45A1E54B-F680-4C2E-A84F-AEFE4CD617EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SGKutuphane.Application</RootNamespace>
+    <AssemblyName>SGKutuphane.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\FrmListBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmListBase.Designer.cs">
+      <DependentUpon>FrmListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Kategories\FrmKategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Kategories\FrmKategoriEkle.Designer.cs">
+      <DependentUpon>FrmKategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Kategories\FrmKategoriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Kategories\FrmKategoriListesi.Designer.cs">
+      <DependentUpon>FrmKategoriListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmKullanıcıEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmKullanıcıEkle.Designer.cs">
+      <DependentUpon>FrmKullanıcıEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmKullanıcıListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmKullanıcıListesi.Designer.cs">
+      <DependentUpon>FrmKullanıcıListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Kullanıcı\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\YayınEvi\FrmYayınEviEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\YayınEvi\FrmYayınEviEkle.Designer.cs">
+      <DependentUpon>FrmYayınEviEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\YayınEvi\FrmYayınEviListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\YayınEvi\FrmYayınEviListesi.Designer.cs">
+      <DependentUpon>FrmYayınEviListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Yazar\FrmYazarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Yazar\FrmYazarEkle.Designer.cs">
+      <DependentUpon>FrmYazarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Yazar\FrmYazarListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Yazar\FrmYazarListesi.Designer.cs">
+      <DependentUpon>FrmYazarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Ögrenci\FrmÖgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Ögrenci\FrmÖgrenciEkle.Designer.cs">
+      <DependentUpon>FrmÖgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Ögrenci\FrmÖgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Ögrenci\FrmÖgrenciListesi.Designer.cs">
+      <DependentUpon>FrmÖgrenciListesi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\FrmListBase.resx">
+      <DependentUpon>FrmListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Kategories\FrmKategoriEkle.resx">
+      <DependentUpon>FrmKategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Kategories\FrmKategoriListesi.resx">
+      <DependentUpon>FrmKategoriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Kullanıcı\FrmKullanıcıEkle.resx">
+      <DependentUpon>FrmKullanıcıEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Kullanıcı\FrmKullanıcıListesi.resx">
+      <DependentUpon>FrmKullanıcıListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Kullanıcı\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\YayınEvi\FrmYayınEviEkle.resx">
+      <DependentUpon>FrmYayınEviEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\YayınEvi\FrmYayınEviListesi.resx">
+      <DependentUpon>FrmYayınEviListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Yazar\FrmYazarEkle.resx">
+      <DependentUpon>FrmYazarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Yazar\FrmYazarListesi.resx">
+      <DependentUpon>FrmYazarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Ögrenci\FrmÖgrenciEkle.resx">
+      <DependentUpon>FrmÖgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Ögrenci\FrmÖgrenciListesi.resx">
+      <DependentUpon>FrmÖgrenciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGKutuphane.Bussiness\SGKutuphane.Bussiness.csproj">
+      <Project>{bf3578ab-26ef-460c-ac14-7a2861b586cc}</Project>
+      <Name>SGKutuphane.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGKutuphane.Data\SGKutuphane.Data.csproj">
+      <Project>{4e2160e5-e039-4099-acee-cc52b22866df}</Project>
+      <Name>SGKutuphane.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
